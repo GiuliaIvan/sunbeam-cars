@@ -1,6 +1,6 @@
     [{
         "name": "Safari Jeep",
-        "category": "off-road", //standard
+        "category": "off-road",
         "persons": "5",
         "suitcases": "3",
         "price": 1040,
@@ -20,7 +20,7 @@
 
     {
         "name": "Honda",
-        "category": "family car", //budget
+        "category": "family car",
         "persons": "4",
         "suitcases": "1",
         "price": 850,
