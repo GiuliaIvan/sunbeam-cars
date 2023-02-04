@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accessories</title>
+	<link rel="stylesheet" href="accessories.css">
+	<script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script> <!--LogIn icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <header>
+		<a class="company-name" href="index.html"><h1>SunbeamCars Inc.</h1></a>
+		<a class="about-us" href="about.html"><h1>About us</h1></a>
+		<i class="fas fa-sign-in-alt"> Log In</i>
+	</header>
+
+
+	<section>
+		<img src="/img/car-c.jpg" alt="Image with car" id="image"> <!--Car image-->
+
+		<!-- ACCESSORIES SECTION -->
+		<div class="box-wrapper">
+
+			<!-- Information transferred from the front page -->
+			<div id="box1">
+				<div id="yellow-box" style="font-size: 25px; font-weight: bold; padding-top: 30px;">
+					<!-- Well chosen! -->
+				</div>
+
+				<!-- Select the accessories -->
+				<div class="middle-column">
+					<div id="box3" style="font-size: 25px; font-weight: bold; padding-top: 30px; text-align: center;">
+						Select accessories (excluding VAT):
+
+						<form id="form1">
+							<fieldset class="fieldset">
+								<br>
+								<input type="checkbox" data-item="Second driver" class="clist" value="199" onchange="calculateTotal(this, this.value), calculateTotal2(this, this.value)">Second driver, kr. 199<br>
+								<input type="checkbox" data-item="Child seat (5-12 years)" class="clist" value="155" onchange="calculateTotal(this, this.value), calculateTotal2(this, this.value)">Child seat (5-12 year), kr. 155<br>
+								<input type="checkbox" data-item="Roadside air" class="clist" value="120" onchange="calculateTotal(this, this.value), calculateTotal2(this, this.value)">Roadside air, kr. 120<br>
+								<input type="checkbox" data-item="Baby seat" class="clist" value="100" onchange="calculateTotal(this, this.value), calculateTotal2(this, this.value)">Baby seat (0-1 year), kr. 100<br>
+								<input type="checkbox" data-item="Child seat (1-4 years)" class="clist" value="140" onchange="calculateTotal(this, this.value), calculateTotal2(this, this.value)">Child seat (1-4 year), kr. 140<br>
+								<input type="checkbox" data-item="GPS navigation" class="clist" value="250" onchange="calculateTotal(this, this.value), calculateTotal2(this, this.value)">GPS navigation, kr. 250<br>
+								<input type="checkbox" data-item="Snow chains" class="clist" value="188" onchange="calculateTotal(this, this.value), calculateTotal2(this, this.value)">Snow chains, kr. 188<br>
+								
+								<button class="accessories-button" type="submit" style="cursor: pointer;">Continue</button>
+							</fieldset>
+						</form>
+
+					</div>
+				</div>
+
+				<!-- The total rental price including accessories -->
+				<div id="box4" style="padding-top: 5px;">
+					<!-- All inclusive <br>(including VAT): -->
+				</div>
+
+				<div id="box4-copy" style="padding-top: 5px;">
+					<!-- Accessories <br>(excluding VAT): -->
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+    <script src="accessories-output.js"></script>
+
+</body>
+</html>

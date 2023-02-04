@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt page</title>
+    <link rel="stylesheet" href="receipt.css">
+	<script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script> <!--LogIn icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+        <!--NAVBAR-->
+        <header>
+            <a class="company-name" href="index.html"><h1>SunbeamCars Inc.</h1></a>
+            <a class="about-us" href="about.html"><h1>About us</h1></a>
+            <i class="fas fa-sign-in-alt"> Log In</i>
+        </header>
+    
+    
+        <section>
+            <img src="/img/car-c.jpg" alt="Image with car" id="image"> <!--Car image-->
+    
+            <!-- ACCESSORIES SECTION -->
+            <div class="box-wrapper">
+    
+                <!-- Information transferred from the front page -->
+                <div id="box1">
+    
+                    <!-- Select the accessories -->
+                    <div class="middle-column">
+                        <div id="box3" style="font-size: 25px; font-weight: bold; padding-top: 30px; text-align: center;">
+                            Thanks! We will have the car ready for you!
+    
+                            <div>
+                                <h3 style="font-weight: normal; text-align: center; margin-top: 5px;">
+                                    <p id="date-time"></p>
+                                </h3>
+                            </div>
+
+                            <form id="form3" style="text-align: left; margin-left: 285px;">
+
+                            </form>
+
+                            <button type="button" onclick="window.print()" class="accessories-button">Print</button>
+                        </div>
+                    </div>
+    
+                    <div id="yellow-box" style="font-size: 25px; font-weight: bold; padding-top: 30px;">
+                        <!-- Well chosen! -->
+                    </div>
+    
+                </div>
+            </div>
+    
+        </section>
+    
+        <script src="receipt-output.js"></script>
+
+</body>
+</html>

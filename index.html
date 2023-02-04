@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunbeamCars Inc.</title>
+    <script src="https://kit.fontawesome.com/5d9287a429.js" crossorigin="anonymous"></script> <!--LogIn icon-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!--NAVBAR-->
+    <header>
+      <a class="company-name" href="index.html"><h1>SunbeamCars Inc.</h1></a>
+      <a class="about-us" href="about.html"><h1>About us</h1></a>
+      <a href="#"><i class="fas fa-sign-in-alt"> Log In</i></a>
+    </header>
+
+    <section class="form-background">
+
+      <!--BEGINNING OF THE INPUTS SECTION-->
+      <form class="form" id="form">
+        <h2>Find the car that suits you</h2>
+
+        <div class="grid-table">
+          <div class="grid-element">
+            <label for="arrivalfield">I pick it up</label> <!--PICK UP CALENDAR-->
+            <input type="date" id="arrivalfield" name="trip-start" value="2021-03-22" min="2021-03-15" max="2021-12-31" required/>
+          </div>
+
+          <div class="grid-element">
+            <label for="departurefield">I hand it in</label> <!--HAND IN CALENDAR-->
+            <input type="date" id="departurefield" name="trip-end" value="2021-03-22" min="2021-03-16" max="2021-12-31" required/>
+          </div>
+
+          <div class="grid-element">
+            <label for="persons">Number of persons</label> <!--NUMBER OF PERSONS INPUT-->
+            <input type="number" id="persons" name="persons" min="1" max="7" required/>
+          </div>
+
+          <div class="grid-element">
+            <label for="suitcases">Number of suitcases</label> <!--NUMBER OF SUITCASES INPUT-->
+            <select id="suitcases">
+              <option value="0">0 - only a bag</option>
+              <option value="1">1 suitcase</option>
+              <option value="2">2 suitcases</option>
+              <option value="3">3 suitcases</option>
+              <option value="4">4 suitcases</option>
+            </select>
+          </div>
+        </div>
+        <!--END OF THE INPUTS SECTION-->
+
+        <button type="submit">Search</button>
+
+      </form>
+    </section>
+    <!--END OF THE FORM SECTION-->
+
+
+    <!-- ERROR DIV -->
+    <div id="error"></div>
+
+
+    <!--CARS SECTION-->
+    <section>
+      <div id="output"></div>
+    </section>
+
+
+    <!-- <script src="data.js"></script> -->
+    <script src="javascript.js"></script>
+
+  </body>
+</html>
